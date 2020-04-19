@@ -1,0 +1,70 @@
+@charset "utf-8"
+
+body{
+	font font-family: font-family: 'Raleway', sans-serif;
+	overflow: hidden;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+#nav {
+	background:  transparent;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+}
+
+#nav h1{
+	float: left;
+}
+#nav h1 a {
+	text-decoration: none;
+	color: white;
+	margin-left: 25px;
+	font-family: 'Dancing Script', cursive;
+
+}
+
+#nav ul{
+	float: right;
+}
+
+#nav ul li {
+	text-decoration: none;
+	list-style-type: none;
+	display: inline-block;
+}
+
+#nav ul li a {
+	text-decoration: none;
+	color: blue;
+	padding: 25px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#nav ul li :hover {
+	background: blue;
+	transition: all ease-in-out 0.40s;
+	opacity : 0.1;
+}
+
+#hello {
+	background: transparent;
+}
+
+#hello1 {
+	background: black;
+	height: 5px;
+}
+
+#hello2 {
+	background: url(../img/ai.jpg);
+	height: 700px;
+	width : 100%;
+}
+
