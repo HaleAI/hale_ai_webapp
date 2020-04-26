@@ -6,6 +6,7 @@ app = Flask(__name__,static_folder="static\\")
 def home():
     return '''
     <!DOCTYPE html>
+	<!-- index file -->
 	<html lang="en">
 	<head>
 		<meta charset="utf-8">
