@@ -4,67 +4,98 @@ body{
 	font font-family: font-family: 'Raleway', sans-serif;
 	overflow: hidden;
 }
-
-* {
+*{
 	margin: 0px;
 	padding: 0px;
 }
-
-
-
-#nav {
+#nav{
 	background:  transparent;
 	width: 100%;
-	height: 60px;
+	height: 100px;
 	line-height: 60px;
 }
-
 #nav h1{
 	float: left;
 }
-#nav h1 a {
+#nav h1 a{
 	text-decoration: none;
 	color: white;
-	margin-left: 25px;
 	font-family: 'Dancing Script', cursive;
 
 }
-
+.scroll_to{
+	scroll-behavior: smooth;
+}
 #nav ul{
 	float: right;
 }
-
-#nav ul li {
+#nav ul li{
+	size: inherit;
+	margin-right: 5px;
+	border-top: 1px solid aqua;
 	text-decoration: none;
 	list-style-type: none;
 	display: inline-block;
 }
-
-#nav ul li a {
+#nav ul li a{
 	text-decoration: none;
 	color: blue;
-	padding: 25px;
-	font-family: 'Open Sans', sans-serif;
+	padding: 20px;
+	font-family: 'Dancing Script', cursive;
+	font-size: 30px;
+	font-weight: bold;
 }
-
-#nav ul li :hover {
-	background: blue;
-	transition: all ease-in-out 0.40s;
+#nav ul li :hover{
+	background: aqua;
+	transition: all ease-in 0.40s;
 	opacity : 0.1;
 }
-
-#hello {
+#hello{
 	background: transparent;
 }
-
-#hello1 {
+#hello1{
 	background: black;
 	height: 5px;
 }
-
-#hello2 {
+#hello2{
 	background: url(../img/ai.jpg);
 	height: 700px;
 	width : 100%;
 }
-
+#nav img{
+	margin-top: 5px;
+}
+#hello2 h1 a{
+	float: left;
+	text-decoration: none;
+	color: white;
+	font-family: 'Dancing Script', cursive;
+}
+#about{
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	font-family: Georgia;
+}
+#team_head{
+	text-align: center;
+	color: blue;
+	font-size: 50px;
+	font-family: 'Dancing Script', cursive; 
+}
+#teamback{
+	background-color: black;
+}
+#teamLead{
+	border: 1px solid aqua;
+	height:250px;
+	width:200px;
+	margin-left: 41.65%;
+}
+#team td{
+	border: 1px solid aqua;
+	float: left;
+	margin-left: 40px;
+	height:250px;
+	width:200px;
+}
