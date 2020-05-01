@@ -30,7 +30,7 @@ def home():
 	</head></a>
 	<body>
 		<div id="hello2">
-			<header id="nav"><a href="/"><img src="assets\img\logo.jfif" height=80 width=80></a>
+			<header id="nav"><a href="/"><img src="assets\img\logoweb.jpg" height=80 width=80></a>
 				<ul>
 					<li id="hello"><a href="/">
 										Home
