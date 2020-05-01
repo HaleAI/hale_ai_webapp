@@ -110,7 +110,7 @@ def home():
 		</div>
 		<footer id="foot">
 			<a href="/">
-				<img src="assets\img\logo.jfif" height=150 width=150>
+				<img src="assets\img\logoweb.jpg" height=150 width=150>
 			</a>
 			<div id="footname">
 				HaleAI
