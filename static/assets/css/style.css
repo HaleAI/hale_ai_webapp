@@ -39,11 +39,11 @@ body{
 	scroll-behavior: smooth;
 }
 #nav ul{
-	float: left;
+	float: right;
 }
 #nav ul li{
 	size: inherit;
-	margin-left: 10px;
+	margin-right: 10px;
 	border-top: 1px solid aqua;
 	text-decoration: none;
 	list-style-type: none;
@@ -60,7 +60,7 @@ body{
 }
 #nav img{
 	float: left;
-	margin-top: 10px;
+	margin-top: 15px;
 	margin-left: 23px;
 }
 #nav ul li :hover{
@@ -88,26 +88,26 @@ body{
 	text-decoration: none;
 	color: white;
 	font-family: Arial;
+	margin-left: 20px;
 }
 #aboutback{
 	background-color: transparent;
 }
 #about{
-	text-align: right;
+	text-align: justify;
 	color: white;
 	font-size: 20px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	margin-left: 50%;
-	margin-right: 20px;
+	margin-left: 42%;
+	margin-right: 4%;
 	display: inline-block;
 }
 #about_head{
-	text-align: right;
+	text-align: left;
 	color: white;
 	font-size: 50px;
-	font-family: Arial, Helvetica, sans-serif; 
-	margin-right: 20px;
-	margin-left: 81.1%;
+	font-family: Arial; 
+	margin-left: 42%;
 	display: inline-block;
 }
 #team_head{
@@ -138,18 +138,80 @@ body{
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 25px;
 }
+#freetrial{
+	background-color: aqua;
+}
+#texttrial{
+	width: 300px;
+	height: 50px;
+	border-radius: 3px;
+	font-size: 20px;
+	padding-left: 10px;
+}
+#trialform{
+	display: inline-block;
+}
+#trialtext{
+	font-family: 'Times New Roman';
+	display: inline-block;
+	margin-left: 18%;
+	font-size: 25px;
+}
+#trialbutton{
+	display: inline-block;
+	height: 50px;
+	width: 200px;
+	color: white;
+	background-color: cadetblue;
+	font-size: 20px;
+	border: none;
+	opacity: 0.7;
+	transition: 0.3s;
 
+}
+#trialbutton:hover{
+	opacity: 1;
+}
+#freetrial2{
+	border: 10px solid white;
+}
 #foot{
 	background-color: black;
-}
-#foot img{
-	margin-left: 10px;
-	margin-top: 10px;
-	display: inline-block;
 }
 #footname{
 	font-size: 40px;
 	font-family: Arial;
 	color: white;
-	margin-left: 25px;
+}
+#socialmediahead{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	margin-left: 15%;
+	font-size: 20px;
+}
+#socialmediahead ul{
+	display: inline-table;
+	width: 20%;
+}
+#socialmediahead li{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	font-size: 15px;
+	list-style-type: none;
+	line-height: 25px;
+}
+#footruler{
+	height:  2px;
+	width: 80%; 
+	border:none; 
+	color:white; 
+	background-color:white;
+}
+#socialmediahead a{
+	color: white;
+	text-decoration: none;
+}
+#socialmediahead a:hover{
+	color: white;
+	text-decoration: underline;
 }

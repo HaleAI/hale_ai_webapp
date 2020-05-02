@@ -22,7 +22,7 @@ def home():
 		<title>
 			HaleAI
 		</title>
-		<link rel="shortcut icon" href="assets\img\logo.jfif">
+		<link rel="shortcut icon" href="assets\img\logo.png">
 		<link rel="stylesheet" type="text/css" href="assets\css\style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
@@ -30,7 +30,7 @@ def home():
 	</head></a>
 	<body>
 		<div id="hello2">
-			<header id="nav"><a href="/"><img src="assets\img\logoweb.jpg" height=80 width=80></a>
+			<header id="nav"><a href="/"><img src="assets\img\logo.png" height=120 width=120></a>
 				<ul>
 					<li id="hello"><a href="/">
 										Home
@@ -42,22 +42,18 @@ def home():
 						</a>
 					</li>
 					<li><a href="">
-								Free Trial
-						</a>
-					</li>
-					<li><a href="">
 							Contact us
 						</a>
 					</li>
 				</ul>
-			</header>
+			</header><br><br>
 			<h1>&nbsp;
 				<a href="/">&nbsp;HaleAI
 				</a>
-			</h1><br><br><br><br><br><br><br><br>
+			</h1><br><br><br><br><br><br><br>
 			<div id="aboutback">
 			<h1 id="about_head">About us</h1><br>
-			<h1 id="about">In these times, health is a major issue and quality healthcare isn't available to all. We, at HaleAI, aim at providing support to healthcare professionals using artificial intelligence. It can help in diagnosis as well as prognosis of various diseases that can sometimes be overlooked or not have obvious symptoms. Hence, the company provides a platform for faster detection of diseases using technology that will benefit the doctors, as more optimum solutions can be found.Our mission is to help healthcare professionals and transform the healthcare industry. Ultimately, it is the life that wins.<br>
+			<h1 id="about">In these times, health is a major issue and quality healthcare isn't available to all. We, at HaleAI, aim at providing support to healthcare professionals using artificial intelligence. It can help in diagnosis as well as prognosis of various diseases that can sometimes be overlooked or not have obvious symptoms. Hence, the company provides a platform for faster detection of diseases using technology that will benefit the doctors, as more optimum solutions can be found. Our mission is to help healthcare professionals and transform the healthcare industry. Ultimately, it is the life that wins.<br>
 		</div>
 		</div>
 		<div id="teamback">
@@ -68,12 +64,24 @@ def home():
 		</div>
 		<div id="teamback">
 			<center><div id="teamcircle">
+				<img src="assets/img/team/AmitKumar.jpg">
+			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<div id="teamcircle">
 				<img src="assets/img/team/Snehil.jpg">
 			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<div id="teamcircle">
-				<img src="assets/img/team/AmitKumar.jpg">
+				<img src="assets/img/team/ShubhangNandan.jpg">
 			</div></center><br>
-			<div id="teamdesig">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Snehil Kumar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amit Kumar<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;<div id="teamdesignation">CEO & CTO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mentor</div>&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/snehil-kumar-88b609142/"><img src="assets\img\linkedin.png" height="25" width="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;<a href="https://www.linkedin.com/in/amit-kumar-6a215b36"><img src="assets\img\linkedin.png" height="25" width="25"></a>
+			<div id="teamdesig">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Amit Kumar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Snehil Kumar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Shubhang Nandan<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;
+			<div id="teamdesignation">Mentor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			CEO & CTO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			COO</div><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://www.linkedin.com/in/amit-kumar-6a215b36/"><img src="assets\img\linkedin.png" height="25" width="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;
+			<a href="https://www.linkedin.com/in/snehil-kumar-88b609142/"><img src="assets\img\linkedin.png" height="25" width="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://www.linkedin.com/in/shubhang-nandan-b2444b12a/"><img src="assets\img\linkedin.png" height="25" width="25"></a>
 			</div><br>
 			<center><div id="teamcircle">
 				<img src="assets/img/team/Divyam.jpg">
@@ -108,13 +116,41 @@ def home():
 			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/prince-pandey-5a76b0178/"><img src="assets\img\linkedin.png" height="25" width="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://linkedin.com/in/rithvik7"><img src="assets\img\linkedin.png" height="25" width="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/manaschuri11"><img src="assets\img\linkedin.png" height="25" width="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/saili-myana"><img src="assets\img\linkedin.png" height="25" width="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/ujjawal-gupta-015ba6168"><img src="assets\img\linkedin.png" height="25" width="25"></a>
 			</div><br><br><br><br>
 		</div>
-		<footer id="foot">
-			<a href="/">
-				<img src="assets\img\logoweb.jpg" height=150 width=150>
-			</a>
+		<div id="freetrial">
+		<br><br>
+		<div id="trialtext">Sign Up for a Free trial!</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<form id="trialform">
+			<input type="text" id="texttrial" placeholder="Email address">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="trialbutton">Sign Up</button>
+		</form>
+		<br><br><br>
+		</div>
+		<hr id="freetrial2">
+		<footer id="foot"><br><center>
+				<a href="/">
+					<img src="assets\img\logo.png" height=150 width=150>
+				</a></center>
 			<div id="footname">
-				HaleAI
-			</div>
+				<center>HaleAI</center>
+			</div><br><br>
+			<div id="socialmediahead">
+				<ul>IMPORTANT LINKS<br>
+					<li><a href="/">Home</a></li>
+					<li><a href="">Services</a></li>
+				</ul>
+				<ul>GET IN TOUCH<br>
+					<li><a href="mailto:haleai1994@gmail.com">Email</a></li>
+					<li><a href="tel:+917004171728">Contact</a></li>
+				</ul>
+				<ul>SOCIAL MEDIA<br>
+					<li><a href="https://www.instagram.com/haleai03/"><img src="assets\img\insta.jpg" height="30" width="30"></a></li>
+					<li><a href="https://www.linkedin.com/company/hale-ai/LinkedIn"><img src="assets\img\linkedin.png" height="30" width="30"></a></li>
+					<li><a href="https://www.facebook.com/haleai/"><img src="assets\img\\facebook.jpg" height="30" width="30"></a></li>
+				</ul>
+				<ul>ARTICLES
+					<li><a href="https://snehil03july.wixsite.com/website-4/file-name">Diabetic Retinopathy Diagnosis</a></li>
+				</ul>
+			</div><br>
+			<center><hr id="footruler"></center><br><br><br><br>
 		</footer>
 	</body>
 </html>
