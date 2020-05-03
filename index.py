@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 
-app = Flask(__name__,static_folder="static\\")
+app = Flask(__name__,);
 
 @app.route('/')
 def home():
@@ -8,113 +8,435 @@ def home():
     <!DOCTYPE html>
 	<html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<script src="assets\js\jquery.js">
-			jQuery('.scroll_to').click(function(e){
-    			var jump = $(this).attr('href');
-	    		var new_position = $(jump).offset();
-    			$('html, body').stop().animate({ 
-					scrollTop: new_position.top 
-				}, 1000);
-    			e.preventDefault();
-			});
-		</script>
+		<meta charset="utf-8">	
 		<title>
 			HaleAI
 		</title>
-		<link rel="shortcut icon" href="assets\img\logo.png">
-		<link rel="stylesheet" type="text/css" href="assets\css\style.css">
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" href="/static/assets/img/logo.png">
+		<link rel="stylesheet" type="text/css" href="static/assets/css/style.css">
 	</head></a>
 	<body>
 		<div id="hello2">
-			<header id="nav"><a href="/"><img src="assets\img\logo.png" height=120 width=120></a>
+			<header id="nav">
+				<a href="/">
+					<img src="static/assets/img/logo.png" height=120 width=120>
+				</a>
 				<ul>
-					<li id="hello"><a href="/">
-										Home
-									</a>
-									
+					<li id="hello">
+						<a href="/">
+							Home
+						</a>
 					</li>
-					<li><a href="">
+					<li>
+						<a href="">
 							Services
 						</a>
 					</li>
-					<li><a href="">
+					<li>
+						<a href="">
 							Contact us
 						</a>
 					</li>
 				</ul>
-			</header><br><br>
-			<h1>&nbsp;
-				<a href="/">&nbsp;HaleAI
+			</header>
+			<br><br>
+			<h1>
+				&nbsp;
+				<a href="/">
+					&nbsp;HaleAI
 				</a>
-			</h1><br><br><br><br><br><br><br>
+			</h1>
+			<br><br><br><br><br><br><br>
 			<div id="aboutback">
-			<h1 id="about_head">About us</h1><br>
-			<h1 id="about">In these times, health is a major issue and quality healthcare isn't available to all. We, at HaleAI, aim at providing support to healthcare professionals using artificial intelligence. It can help in diagnosis as well as prognosis of various diseases that can sometimes be overlooked or not have obvious symptoms. Hence, the company provides a platform for faster detection of diseases using technology that will benefit the doctors, as more optimum solutions can be found. Our mission is to help healthcare professionals and transform the healthcare industry. Ultimately, it is the life that wins.<br>
-		</div>
-		</div>
-		<div id="teamback">
-		<br><br>
-		<h1 id="team_head">Our Team</h1>
-		<br>
-		<br>
+				<h1 id="about_head">
+					About us
+				</h1><br>
+				<h1 id="about">
+					In these times, health is a major issue and quality healthcare isn't available to all. We, at HaleAI, aim at providing support to healthcare professionals using artificial intelligence. It can help in diagnosis as well as prognosis of various diseases that can sometimes be overlooked or not have obvious symptoms. Hence, the company provides a platform for faster detection of diseases using technology that will benefit the doctors, as more optimum solutions can be found. Our mission is to help healthcare professionals and transform the healthcare industry. Ultimately, it is the life that wins.
+					<br>
+			</div>
 		</div>
 		<div id="teamback">
-			<center><div id="teamcircle">
-				<img src="assets/img/team/AmitKumar.jpg">
-			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<div id="teamcircle">
-				<img src="assets/img/team/Snehil.jpg">
-			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<div id="teamcircle">
-				<img src="assets/img/team/ShubhangNandan.jpg">
-			</div></center><br>
-			<div id="teamdesig">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			Amit Kumar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			Snehil Kumar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			Shubhang Nandan<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;
-			<div id="teamdesignation">Mentor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			CEO & CTO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			COO</div><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://www.linkedin.com/in/amit-kumar-6a215b36/"><img src="assets\img\linkedin.png" height="25" width="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;
-			<a href="https://www.linkedin.com/in/snehil-kumar-88b609142/"><img src="assets\img\linkedin.png" height="25" width="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://www.linkedin.com/in/shubhang-nandan-b2444b12a/"><img src="assets\img\linkedin.png" height="25" width="25"></a>
-			</div><br>
-			<center><div id="teamcircle">
-				<img src="assets/img/team/Divyam.jpg">
-			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<div id="teamcircle">
-				<img src="assets/img/team/Suvashish.jpg">
-			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<div id="teamcircle">
-				<img src="assets/img/team/Thejaswi.jpg">
-			</div></center><br><div id="teamdesig">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Divyam Tiwari&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suvashish Pandey&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thejaswi B K<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div id="teamdesignation">Content team lead&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lead Bio-sciences Scientist&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lead Devops engineer</div><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/divyam-bb7411184"><img src="assets\img\linkedin.png" height="25" width="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://in.linkedin.com/in/suvashish-pandey-a5b0a719b"><img src="assets\img\linkedin.png" height="25" width="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/thejaswibk"><img src="assets\img\linkedin.png" height="25" width="25"></a>
-			</div><br>
-			<center><div id="teamcircle">
-				<img src="assets/img/team/AnirudhBelwadi.jpg">
-			</div><br><br><div id="teamdesig">Anirudh Belwadi</div></center><div id="teamdesignation"><center>Full Stack Developer<center></div><center><a href="https://www.linkedin.com/in/anirudh-belwadi-7a8707182/"><img src="assets\img\linkedin.png" height="25" width="25"></a></center><br>
-			<center><div id="teamcircle">
-				<img src="assets/img/team/PrincePandey.jpg">
-			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<div id="teamcircle">
-				<img src="assets/img/team/K.SaiRithvik.jpg">
-			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<div id="teamcircle">
-				<img src="assets/img/team/Manas.jpg">
-			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<div id="teamcircle">
-				<img src="assets/img/team/Saili.jpg">
-			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<div id="teamcircle">
-				<img src="assets/img/team/UjjawalGupta.jpg">
-			</div></center>
-			<br><div id="teamdesig">&nbsp;&nbsp;&nbsp;Prince Pandey&nbsp;&nbsp;&nbsp;Sai rithvik Kanakamedala&nbsp;&nbsp;&nbsp;&nbsp;Manas Churi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saili Myana&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ujjawal Gupta
-			<br><div id="teamdesignation">&nbsp;&nbsp;&nbsp;Full stack intern&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbspAI Research Intern&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;AI research intern&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;AI research intern&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;AI research intern</div>
-			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/prince-pandey-5a76b0178/"><img src="assets\img\linkedin.png" height="25" width="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://linkedin.com/in/rithvik7"><img src="assets\img\linkedin.png" height="25" width="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/manaschuri11"><img src="assets\img\linkedin.png" height="25" width="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/saili-myana"><img src="assets\img\linkedin.png" height="25" width="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/ujjawal-gupta-015ba6168"><img src="assets\img\linkedin.png" height="25" width="25"></a>
-			</div><br><br><br><br>
+			<br><br>
+			<h1 id="team_head">
+				Our Team
+			</h1>
+			<br>
+			<br>
+		</div>
+		<div id="teamback">
+			<div class="container">
+				<div class ="row">
+					<div class="col order-xs-1 order-sm-1 order-md-2">
+						<center>
+							<div id="teamcircle">
+								<img src="/static/assets/img/team/Snehil.jpg">
+							</div>
+						</center>
+						<div id="teamdesig">
+							<div class ="row">
+								<div class="col">
+									<div class="row">
+										<div class="col">
+											Snehil Kumar
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											CEO & CTO
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<a href="https://www.linkedin.com/in/snehil-kumar-88b609142/">
+												<img src="/static/assets/img/linkedin.png" height="25" width="25">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col order-xs-2 order-sm-2 order-md-1">
+						<center>
+							<div id="teamcircle">
+								<img src="/static/assets/img/team/AmitKumar.jpg">
+							</div>
+						</center>
+						<div id="teamdesig">
+							<div class ="row">
+								<div class="col">
+									<div class="row">
+										<div class="col">
+											Amit Kumar
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											Mentor
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<a href="https://www.linkedin.com/in/amit-kumar-6a215b36/">
+												<img src="/static/assets/img/linkedin.png" height="25" width="25">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						<div class="col order-xs-3 order-sm-3 order-md-3">
+							<center>
+								<div id="teamcircle">
+									<img src="/static/assets/img/team/ShubhangNandan.jpg">
+								</div>
+							</center>
+							<div id="teamdesig">
+								<div class ="row">
+									<div class="col">
+										<div class="row">
+											<div class="col">
+												Shubhang Nandan
+											</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												COO
+											</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<a href="https://www.linkedin.com/in/shubhang-nandan-b2444b12a/">
+													<img src="/static/assets/img/linkedin.png" height="25" width="25">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class ="row">
+					<div class="col">
+						<center>
+							<div id="teamcircle">
+								<img src="/static/assets/img/team/Divyam.jpg">
+							</div>
+						</center>
+						<div id="teamdesig">
+							<div class ="row">
+								<div class="col">
+									<div class="row">
+										<div class="col">
+											Divyam Tiwari
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											Content team lead
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<a href="https://www.linkedin.com/in/divyam-bb7411184">
+												<img src="/static/assets/img/linkedin.png" height="25" width="25">
+												</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						<div class="col">
+							<center>
+								<div id="teamcircle">
+									<img src="/static/assets/img/team/Suvashish.jpg">
+								</div>
+							</center>
+							<div id="teamdesig">
+								<div class ="row">
+									<div class="col">
+										<div class="row">
+											<div class="col">
+												Suvasish Pandey
+											</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												Lead Bio-sciences Scientist
+											</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<a href="https://in.linkedin.com/in/suvashish-pandey-a5b0a719b">
+													<img src="/static/assets/img/linkedin.png" height="25" width="25">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<center>
+								<div id="teamcircle">
+									<img src="/static/assets/img/team/Thejaswi.jpg">
+								</div>
+							</center>
+							<div id="teamdesig">
+								<div class ="row">
+									<div class="col">
+										<div class="row">
+											<div class="col">
+												Thejaswi B K
+											</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												Lead Devops engineer
+											</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<a href="https://www.linkedin.com/in/thejaswibk">
+													<img src="/static/assets/img/linkedin.png" height="25" width="25">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class ="row">
+					<div class="col">
+						<center>
+							<div id="teamcircle">
+								<img src="/static/assets/img/team/AnirudhBelwadi.jpg">
+							</div>
+						</center>
+						<div id="teamdesig">
+							<div class ="row">
+								<div class="col">
+									<div class="row">
+										<div class="col">
+											Anirudh Belwadi
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											Full stack Developer
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<a href="https://www.linkedin.com/in/anirudh-belwadi-7a8707182/">
+												<img src="/static/assets/img/linkedin.png" height="25" width="25">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						<div class="col">
+							<center>
+								<div id="teamcircle">
+									<img src="/static/assets/img/team/Saili.jpg">
+								</div>
+							</center>
+							<div id="teamdesig">
+								<div class ="row">
+									<div class="col">
+										<div class="row">
+											<div class="col">
+												Saili Myana
+											</div>
+										</div>
+											<div class="row">
+											<div class="col">
+												AI Developer
+											</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<a href="https://www.linkedin.com/in/saili-myana">
+													<img src="/static/assets/img/linkedin.png" height="25" width="25">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<center>
+								<div id="teamcircle">
+									<img src="/static/assets/img/team/K.SaiRithvik.jpg">
+								</div>
+							</center>
+							<div id="teamdesig">
+								<div class ="row">
+									<div class="col">
+										<div class="row">
+											<div class="col">
+												Sai Rithvik Kanakamedala
+											</div>
+										</div>
+										<div class="row">
+											<div class="col">
+													AI Developer
+											</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<a href="http://linkedin.com/in/rithvik7">
+													<img src="/static/assets/img/linkedin.png" height="25" width="25">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class ="row">
+					<div class="col">
+						<center>
+							<div id="teamcircle">
+								<img src="/static/assets/img/team/PrincePandey.jpg">
+							</div>
+						</center>
+						<div id="teamdesig">
+							<div class ="row">
+								<div class="col">
+									<div class="row">
+										<div class="col">
+											Prince Pandey
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											Full stack Intern
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<a href="https://www.linkedin.com/in/prince-pandey-5a76b0178/">
+												<img src="/static/assets/img/linkedin.png" height="25" width="25">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						<div class="col">
+							<center>
+								<div id="teamcircle">
+									<img src="/static/assets/img/team/Manas.jpg">
+								</div>
+							</center>
+							<div id="teamdesig">
+								<div class ="row">
+									<div class="col">
+										<div class="row">
+											<div class="col">
+												Manas Churi
+											</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												AI Research Intern
+											</div>
+										</div>	
+										<div class="row">
+											<div class="col">
+												<a href="https://www.linkedin.com/in/manaschuri11">
+													<img src="/static/assets/img/linkedin.png" height="25" width="25">
+												</a>
+											</div> 
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<center>
+								<div id="teamcircle">
+									<img src="/static/assets/img/team/UjjawalGupta.jpg">
+								</div>
+							</center>
+							<div id="teamdesig">
+								<div class="row">
+									<div class="col">
+										<div class="row">
+											<div class="col">
+												Ujjawal Gupta
+											</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												AI Research Intern
+												</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<a href="https://www.linkedin.com/in/ujjawal-gupta-015ba6168">
+													<img src="/static/assets/img/linkedin.png" height="25" width="25">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div id="freetrial">
 		<br><br>
@@ -127,7 +449,7 @@ def home():
 		<hr id="freetrial2">
 		<footer id="foot"><br><center>
 				<a href="/">
-					<img src="assets\img\logo.png" height=150 width=150>
+					<img src="/static/assets/img/logo.png" height=150 width=150>
 				</a></center>
 			<div id="footname">
 				<center>HaleAI</center>
@@ -142,9 +464,9 @@ def home():
 					<li><a href="tel:+917004171728">Contact</a></li>
 				</ul>
 				<ul>SOCIAL MEDIA<br>
-					<li><a href="https://www.instagram.com/haleai03/"><img src="assets\img\insta.jpg" height="30" width="30"></a></li>
-					<li><a href="https://www.linkedin.com/company/hale-ai/LinkedIn"><img src="assets\img\linkedin.png" height="30" width="30"></a></li>
-					<li><a href="https://www.facebook.com/haleai/"><img src="assets\img\\facebook.jpg" height="30" width="30"></a></li>
+					<li><a href="https://www.instagram.com/haleai03/"><img src="/static/assets/img/insta.jpg" height="30" width="30"></a></li>
+					<li><a href="https://www.linkedin.com/company/hale-ai/LinkedIn"><img src="/static/assets/img/linkedin.png" height="30" width="30"></a></li>
+					<li><a href="https://www.facebook.com/haleai/"><img src="/static/assets/img/facebook.jpg" height="30" width="30"></a></li>
 				</ul>
 				<ul>ARTICLES
 					<li><a href="https://snehil03july.wixsite.com/website-4/file-name">Diabetic Retinopathy Diagnosis</a></li>
@@ -162,4 +484,4 @@ def contact():
     '''
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True);
