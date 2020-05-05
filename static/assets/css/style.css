@@ -80,15 +80,6 @@ body{
 	font-family: 'Times New Roman';
 	font-size: 30px;
 	text-align: center;
-<<<<<<< HEAD
-=======
-}
-#teamdesignation{
-	display: inline;
-	color: white;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 25px;
->>>>>>> 3c39787f725c7a6893b3d463c614d03a097e8d99
 }
 #freetrial{
 	background-color: aqua;
@@ -176,11 +167,6 @@ body{
 	color: white;
 	text-decoration: underline;
 }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 3c39787f725c7a6893b3d463c614d03a097e8d99
 /* Bootstrap */
 
 /*!
@@ -4009,11 +3995,7 @@ body{
   }
   
   .nav-link.disabled {
-<<<<<<< HEAD
 	color: white;
-=======
-	color: #6c757d;
->>>>>>> 3c39787f725c7a6893b3d463c614d03a097e8d99
 	pointer-events: none;
 	cursor: default;
   }
@@ -4037,22 +4019,14 @@ body{
   }
   
   .nav-tabs .nav-link.disabled {
-<<<<<<< HEAD
 	color: white;
-=======
-	color: #6c757d;
->>>>>>> 3c39787f725c7a6893b3d463c614d03a097e8d99
 	background-color: transparent;
 	border-color: transparent;
   }
   
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
-<<<<<<< HEAD
 	color: white;
-=======
-	color: #495057;
->>>>>>> 3c39787f725c7a6893b3d463c614d03a097e8d99
 	background-color: #fff;
 	border-color: #dee2e6 #dee2e6 #fff;
   }
@@ -4413,7 +4387,6 @@ body{
   }
   
   .navbar-light .navbar-nav .nav-link {
-<<<<<<< HEAD
 	color: white;
   }
   
@@ -4423,28 +4396,13 @@ body{
   
   .navbar-light .navbar-nav .nav-link.disabled {
 	color: white;
-=======
-	color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-	color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .navbar-light .navbar-nav .nav-link.disabled {
-	color: rgba(0, 0, 0, 0.3);
->>>>>>> 3c39787f725c7a6893b3d463c614d03a097e8d99
   }
   
   .navbar-light .navbar-nav .show > .nav-link,
   .navbar-light .navbar-nav .active > .nav-link,
   .navbar-light .navbar-nav .nav-link.show,
   .navbar-light .navbar-nav .nav-link.active {
-<<<<<<< HEAD
 	color: white;
-=======
-	color: rgba(0, 0, 0, 0.9);
->>>>>>> 3c39787f725c7a6893b3d463c614d03a097e8d99
   }
   
   .navbar-light .navbar-toggler {
@@ -4477,11 +4435,7 @@ body{
   }
   
   .navbar-dark .navbar-nav .nav-link {
-<<<<<<< HEAD
 	color: white;
-=======
-	color: rgba(255, 255, 255, 0.5);
->>>>>>> 3c39787f725c7a6893b3d463c614d03a097e8d99
   }
   
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
