@@ -1,6 +1,10 @@
 from flask import Flask, request, jsonify, render_template
 
+<<<<<<< HEAD
 app = Flask(__name__)
+=======
+app = Flask(__name__,);
+>>>>>>> 3c39787f725c7a6893b3d463c614d03a097e8d99
 
 @app.route('/')
 def home():
@@ -16,6 +20,7 @@ def home():
 		<link rel="stylesheet" type="text/css" href="static/assets/css/style.css">
 	</head></a>
 	<body>
+<<<<<<< HEAD
 		<nav class="navbar navbar-expand-md navbar-dark navigation">
 			<a href="/" class"navbar-brand">
 				<img src="static/assets/img/logo.png" height=120 width=120>
@@ -72,10 +77,60 @@ def home():
 					</div>
 				</div>
 			</div>
+=======
+		<div id="hello2">
+			<header id="nav">
+				<a href="/">
+					<img src="static/assets/img/logo.png" height=120 width=120>
+				</a>
+				<ul>
+					<li id="hello">
+						<a href="/">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Services
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Contact us
+						</a>
+					</li>
+				</ul>
+			</header>
+			<br><br>
+			<h1>
+				&nbsp;
+				<a href="/">
+					&nbsp;HaleAI
+				</a>
+			</h1>
+			<br><br><br><br><br><br><br>
+			<div id="aboutback">
+				<h1 id="about_head">
+					About us
+				</h1><br>
+				<h1 id="about">
+					In these times, health is a major issue and quality healthcare isn't available to all. We, at HaleAI, aim at providing support to healthcare professionals using artificial intelligence. It can help in diagnosis as well as prognosis of various diseases that can sometimes be overlooked or not have obvious symptoms. Hence, the company provides a platform for faster detection of diseases using technology that will benefit the doctors, as more optimum solutions can be found. Our mission is to help healthcare professionals and transform the healthcare industry. Ultimately, it is the life that wins.
+					<br>
+			</div>
+		</div>
+		<div id="teamback">
+			<br><br>
+			<h1 id="team_head">
+				Our Team
+			</h1>
+			<br>
+			<br>
+>>>>>>> 3c39787f725c7a6893b3d463c614d03a097e8d99
 		</div>
 		<div id="teamback">
 			<div class="container">
 				<div class ="row">
+<<<<<<< HEAD
 					<div class="col">
 						<br><br>
 						<h1 id="team_head">
@@ -86,6 +141,8 @@ def home():
 					</div>
 				</div>
 				<div class ="row">
+=======
+>>>>>>> 3c39787f725c7a6893b3d463c614d03a097e8d99
 					<div class="col order-xs-1 order-sm-1 order-md-2">
 						<center>
 							<div id="teamcircle">
@@ -525,4 +582,8 @@ def contact():
     '''
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     app.run(debug=True)
+=======
+    app.run(debug=True);
+>>>>>>> 3c39787f725c7a6893b3d463c614d03a097e8d99
