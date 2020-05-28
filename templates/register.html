@@ -10,9 +10,9 @@
         <script src="/static/assets/js/myscript.js"></script>
         <script>
             {% for message in get_flashed_messages() %}
-            alert("{{ message }}")
+            alert("{{ message }}");
             {% endfor %}
-            emid={{ emid }}
+            emid={{ emid }};
             if(emid==''){
                 {{ emid }}={{ email }};
             }
@@ -42,44 +42,44 @@
                     First Name
                 </div>
                 <br>
-                <input type="text" class="loginemail" name="firstname" value="{{ f }}" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" />
+                <input type="text" class="loginemail" name="firstname" value="{{ f }}" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required />
                 <br><br>
                 <div class="loginhint">
                     Last Name
                 </div>
                 <br>
-                <input type="text" class="loginemail" name="lastname" value="{{ l }}" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" />
+                <input type="text" class="loginemail" name="lastname" value="{{ l }}" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required />
                 <br><br>
                 <div class="loginhint">
                     Email address
                 </div>
                 <br>
-                <input type="email" class="loginemail" name="emailadd" value="{{ emid }}" placeholder="abc@example.com" onfocus="this.placeholder = ''" onblur="this.placeholder = 'abc.example.com'" />
+                <input type="email" class="loginemail" name="emailadd" value="{{ emid }}" placeholder="abc@example.com" onfocus="this.placeholder = ''" onblur="this.placeholder = 'abc.example.com'" required />
                 <br><br>
                 <div class="loginhint">
                     Password
                 </div>
                 <br>
-                <input type="password" class="loginemail" name="password" placeholder="**********" onfocus="this.placeholder = ''" onblur="this.placeholder = '**********'" />
+                <input type="password" class="loginemail" name="password" placeholder="**********" onfocus="this.placeholder = ''" onblur="this.placeholder = '**********'" required />
                 <br><br>
                 <div class="loginhint">
                     Confirm Password
                 </div>
                 <br>
-                <input type="password" class="loginemail" name="confirmpass" placeholder="**********" onfocus="this.placeholder = ''" onblur="this.placeholder = '**********'" />
+                <input type="password" class="loginemail" name="confirmpass" placeholder="**********" onfocus="this.placeholder = ''" onblur="this.placeholder = '**********'" required />
                 <br><br>
                 <div class="loginhint">
                     Phone Number
                 </div>
                 <br>
-                <input type="text" class="loginemail" name="phoneno" value="{{ ph }}" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" />
+                <input type="text" class="loginemail" name="phoneno" value="{{ ph }}" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" required />
                 <br><br>
                 <div class="loginhint">
                     User Type
                 </div>
                 <br>
                 <select name="usertype" id="user" class="loginemail" name="usertype">
-                    <option value="User Type" hidden>Choose User Type</option>
+                    <option value="User Type" disabled selected value>Choose User Type</option>
                     <option value="Student">Student</option>
                     <option value="Healthcare worker">Healthcare worker</option>
                 </select>

@@ -3,6 +3,7 @@ import http.server
 import socketserver
 import sqlite3
 
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -21,7 +22,7 @@ def loginpage():
 def registration():
 	if request.method=='POST':
 		emid = request.form['emid']
-		return render_template('register.html',emid=emid)
+		return render_template('register.html',emid='emid')
 	return render_template('register.html',emid='')
 
 @app.route('/reglogin', methods=['GET','POST'])
@@ -43,7 +44,7 @@ def printf():
 		return render_template('register.html',f=fname,l=lname,email=email,ph=phone,u=usert,emid='')
 	if(password!=conpass):
 		flash("Passwords don't match")
-		return render_template('register.html',f=fname,l=lname,email=email,ph=phone,u=usert,emid='')
+		return render_template('register.html',f=fname,l=lname,email=email,ph=phone,u=usert,emid=email)
 	conn.commit()
 	conn.close()
 	return render_template('login.html',e=email)
