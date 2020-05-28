@@ -3,10 +3,6 @@ import http.server
 import socketserver
 import sqlite3
 
-SITE_VERIFY_URL = 'https://www.google.com/recaptcha/api/siteverify'
-SITE_SECRET = '6LfeHx4UAAAAAFWXGh_xcL0B8vVcXnhn9q_SnQ1b'
-RECAPTCHA_RESPONSE_PARAM = 'g-recaptcha-response'
-
 app = Flask(__name__)
 
 @app.route('/')
