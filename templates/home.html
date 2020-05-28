@@ -10,7 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="/static/assets/css/style.css">
 		<script>
             {% for message in get_flashed_messages() %}
-            a= "{{ message }}"
+            var a = "{{ message }}"
 			{% endfor %}
 			if(a!=''){
 				alert(a);
@@ -102,6 +102,7 @@
 		</div>
 		<center>
 		<div class="slideshow-container" id="teamback">
+			<br>
 			<div id="slidehead">
 				Solution with AI
 			</div>

@@ -5,15 +5,6 @@ function myLine(ele){
 function myRemoveLine(ele){
     var id = ele.id;
     document.getElementById(id).style.borderBottom="";
-    var d=document.getElementById(id);
-    child=d.children[0];
-    child.classList.toggle("hide");
-}
-function myPopup(ele){
-    var id = ele.id;
-    var d=document.getElementById(id);
-    child=d.children[0];
-    child.classList.toggle("show");
 }
 
 var slideIndex = 0;
@@ -71,6 +62,7 @@ gapi.auth2.getAuthInstance().signOut().then(function(){
   document.querySelector('#content').innerText='';
 });
 }
+
 function closePopUp(){
   var x = document.getElementById("fixedconstruction");
   if (x.style.display === "none") {

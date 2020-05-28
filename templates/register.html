@@ -10,7 +10,8 @@
         <script src="/static/assets/js/myscript.js"></script>
         <script>
             {% for message in get_flashed_messages() %}
-            alert("{{ message }}");
+            var a = {{ message }};
+            alert(a);
             {% endfor %}
             emid={{ emid }};
             if(emid==''){
