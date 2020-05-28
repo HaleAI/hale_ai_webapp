@@ -21,7 +21,8 @@ def loginpage():
 def registration():
 	if request.method=='POST':
 		emid = request.form['emid']
-	return render_template('register.html',emid=emid)
+		return render_template('register.html',emid=emid)
+	return render_template('register.html',emid='')
 
 @app.route('/reglogin', methods=['GET','POST'])
 def printf():
