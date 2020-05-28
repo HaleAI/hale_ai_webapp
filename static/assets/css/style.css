@@ -1,172 +1,4 @@
-@charset "utf-8"
-
-body{
-	font font-family: font-family: 'Raleway', sans-serif;
-	overflow: hidden;
-}
-*{
-	margin: 0px;
-	padding: 0px;
-}
-#teamcircle{
-	border-radius: 120px;
-	height: 200px;
-	width: 200px;
-	border: 1px solid aqua;
-	overflow: hidden;
-	display: inline-block;
-}
-#teamcircle img{
-	height: 200px;
-	width: 200px;
-}
-.my-nav-box{
-	border-top: 1px solid aqua;
-}
-.my-nav-link{
-	text-decoration: none;
-	color: white;
-	padding: 20px;
-	font-family: Arial;
-	font-size: 30px;
-	font-weight: bold;
-}
-.my-nav-box:hover{
-	background: aqua;
-	transition: all ease-in 0.40s;
-	opacity : 0.1;
-}
-#hello2{
-	background: url(../img/ai.jpeg);
-	height: 710px;
-	width : 100%;
-	margin-top: -11px;
-}
-#hello2 h1 a{
-	float: left;
-	font-size: 35px;
-	text-decoration: none;
-	color: white;
-	font-family: Arial;
-	margin-left: -18px;
-}
-#about{
-	text-align: justify;
-	color: white;
-	font-size: 100%;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	margin-left: 42%;
-	display: inline-block;
-}
-#about_head{
-	text-align: left;
-	color: white;
-	font-size: 50px;
-	font-family: Arial; 
-	margin-left: 42%;
-}
-#team_head{
-	text-align: center;
-	color: blue;
-	font-size: 50px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-}
-#teamback{
-	background-color: black;
-}
-#teamdesig{
-	text-decoration: none;
-	color: white;
-	font-family: 'Times New Roman';
-	font-size: 30px;
-	text-align: center;
-}
-#freetrial{
-	background-color: aqua;
-}
-#texttrial{
-	width: 300px;
-	height: 50px;
-	border-radius: 3px;
-	font-size: 20px;
-	padding-left: 10px;
-}
-#trialtext{
-	font-family: 'Times New Roman';
-	font-size: 25px;
-}
-#trialbutton{
-	height: 50px;
-	width: 200px;
-	color: white;
-	background-color: cadetblue;
-	font-size: 20px;
-	border: none;
-	opacity: 0.7;
-	transition: 0.3s;
-
-}
-.my-container{
-	padding: 20px;
-}
-.my-container-head{
-	margin-left: -20px;
-}
-.my-col{
-	padding:10px;
-}
-#trialbutton:hover{
-	opacity: 1;
-}
-.navigation{
-	background-color: black;
-}
-.navigation img{
-	margin-left: 30px;
-}
-#freetrialruler{
-	border: 10px solid white;
-}
-#foot{
-	background-color: black;
-}
-#footname{
-	font-size: 40px;
-	font-family: Arial;
-	color: white;
-}
-#socialmediahead{
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	color: white;
-	font-size: 20px;
-	margin-left: 15%;
-}
-#socialmediahead ul{
-	display: inline-table;
-	width: 20%;
-}
-#socialmediahead li{
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	color: white;
-	font-size: 15px;
-	list-style-type: none;
-	line-height: 25px;
-}
-#footruler{
-	height:  2px;
-	width: 80%; 
-	border:none; 
-	color:white; 
-	background-color:white;
-}
-#socialmediahead a{
-	color: white;
-	text-decoration: none;
-}
-#socialmediahead a:hover{
-	color: white;
-	text-decoration: underline;
-}
+@charset "utf-8";
 /* Bootstrap */
 
 /*!
@@ -9970,4 +9802,500 @@ body{
 	  color: inherit;
 	  border-color: #dee2e6;
 	}
+  }
+
+  @media (max-width: 700px) {
+	#teamcircle{
+		border-radius: 100px;
+		height: 200px;
+		width: 200px;
+		border: 1px solid aqua;
+		overflow: hidden;
+		display: inline-block;
+	}
+	#teamcircle img{
+		height: 200px;
+		width: 200px;
+	}
+}
+@media (max-width: 500px) {
+	#teamcircle{
+		border-radius: 120px;
+		height: 240px;
+		width: 240px;
+		border: 1px solid aqua;
+		overflow: hidden;
+		display: inline-block;
+	}
+	#teamcircle img{
+		height: 240px;
+		width: 240px;
+	}
+}
+
+/* Self styles */
+
+body{
+	font-family: 'Raleway', sans-serif;
+	overflow-y: visible;
+	background-color: black;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#teamcircle{
+	border-radius: 100px;
+	height: 200px;
+	width: 200px;
+	border: 1px solid aqua;
+	overflow: hidden;
+	display: inline-block;
+}
+#teamcircle img{
+	height: 200px;
+	width: 200px;
+}
+.my-nav-box{
+	border-top: 1px solid aqua;
+}
+.aboutself{
+	font-size: 15px;
+}
+.my-nav-link{
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	font-family: Arial;
+	font-size: 25px;
+	font-weight: bold;
+}
+.my-nav-box:hover{
+	background: aqua;
+	transition: all ease-in 0.40s;
+	opacity : 0.1;
+}
+#hello2{
+	background: url(../img/ai.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: -11px;
+}
+#hello2 h1 a{
+	float: left;
+	font-size: 3vw;
+	text-decoration: none;
+	color: white;
+	font-family: Arial;
+	margin-left: 5px;
+	margin-top: -15px;
+}
+#about{
+	text-align: left;
+	color: white;	
+	font-size: 1.6vw;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-left: 50%;
+	display: inline-block;
+	margin-right: 20px;
+}
+#about_head{
+	text-align: left;
+	color: white;
+	font-size: 3vw;
+	font-family: Arial; 
+	margin-left: 50%;
+}
+#team_head{
+	text-align: center;
+	color: blue;
+	font-size: 50px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+#teamback{
+	background-color: black;
+}
+#teamdesig{
+	text-decoration: none;
+	color: white;
+	font-family: 'Times New Roman';
+	font-size: 20px;
+	text-align: center;
+}
+.name{
+	font-size: 30px;
+}
+.desi{
+	padding:10px;
+}
+.nopadding {
+	padding: 0 !important;
+	margin: 0 !important;
+ }
+ .nopadleft {
+	padding-left: 0 !important;
+	margin: 0 !important;
+ }
+#freetrial{
+	background-color: darkblue;
+}
+#texttrial{
+	width: 300px;
+	height: 50px;
+	border-radius: 3px;
+	font-size: 20px;
+	padding-left: 10px;
+}
+#trialtext{
+	font-family: 'Times New Roman';
+	font-size: 25px;
+	color: white;
+}
+#trialbutton{
+	height: 50px;
+	width: 200px;
+	color: black;
+	background-color: red;
+	font-size: 25px;
+	border-radius: 20px;
+	border: none;
+	opacity: 1;
+	transition: 0.3s;
+	font-weight: bold;
+	font-family: 'Times New Roman';
+
+}
+.my-container{
+	padding: 20px;
+}
+.my-container-head{
+	margin-left: -20px;
+}
+.my-col{
+	padding:10px;
+}
+#trialbutton:hover{
+	opacity: 0.5;
+	background-color: yellow;
+	cursor: pointer;
+}
+.navigation{
+	background-color: black;
+}
+.navigation img{
+	margin-left: 5px;
+}
+#freetrialruler{
+	border: 10px solid white;
+}
+#foot{
+	background-color: black;
+}
+#foot img{
+	max-width: 140px;
+	max-height: 140px;
+}
+#footname{
+	font-size: 200%;
+	font-family: Arial;
+	color: white;
+}
+#socialmediahead{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	font-size: 120%;
+	margin-left: 15%;
+}
+#socialmediahead ul{
+	display: inline-table;
+	width: 20%;
+}
+#socialmedia li{
+	display: inline;
+}
+#socialmediahead li{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	font-size: 75%;
+	list-style-type: none;
+	line-height: 120%;
+}
+#footruler{
+	height:  2px;
+	width: 80%; 
+	border:none; 
+	color:white; 
+	background-color:white;
+}
+#socialmediahead a{
+	color: white;
+	text-decoration: none;
+}
+#socialmediahead a:hover{
+	color: white;
+	text-decoration: underline;
+}
+.popup{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+.popup .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	top: 1%;
+	left: 50%;
+	margin-left: -80px;
+}
+ .popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 0.2s;
+	animation: fadeIn 0.2s;
+}
+.popup .hide {
+	visibility: hidden;
+	-webkit-animation: fadeIn 0.2s;
+	animation: fadeIn 0.2s;
+}
+
+.popup-left{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+.popup-left .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	top: 1%;
+	right: 80%;
+	margin-left: -80px;
+  }
+  .popup-left .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 0.2s;
+	animation: fadeIn 0.2s;
+  }
+  .popup-left .hide {
+	visibility: hidden;
+	-webkit-animation: fadeIn 0.2s;
+	animation: fadeIn 0.2s;
+  }
+
+  @-webkit-keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 0.5;}
+  }
+  @keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:0.5 ;}
+  }
+
+* {
+	box-sizing: border-box;
+}
+.mySlides {
+	display: none;
+}
+.mySlides img {
+	vertical-align: middle;
+}
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+.slidetext{
+  color: rgb(255, 255, 255);
+  font-size: 1.3vw;
+  padding: 8px 12px;
+  position: absolute;
+  font-family: 'Times New Roman';
+  right: 15px;
+  top: 20%;
+  width:27%;
+  text-align: center;
+}
+.numbertext {
+  color: rgb(255, 255, 255);
+  font-size: 2vw;
+  padding: 8px 12px;
+  position: absolute;
+  top: 40%;
+  left: 1%;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  border: solid 3px aqua;
+  margin: 1px;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 6.8s;
+  animation-name: fade;
+  animation-duration: 6.8s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+#slidehead{
+	color: white;
+	font-family: Arial;
+	font-size: 4vw;
+}
+ .loginform{
+	text-align: center;
+	max-width: 450px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px 50px;
+	margin-top: 10px;
+	color: white;
+	background-color: rgba(255, 255, 255, 0.062);
+ }
+ .loginform a{
+	font-size: 30px;
+	text-decoration: none;
+	color: white;
+	font-family: Arial;
+	text-align: center;
+ }
+ .loginimage img{
+	margin-top: -20px;
+ }
+ .loginname{
+	 font-size: 20px;
+	 color: white;
+	 text-align: center;
+ }
+ .loginhint{
+	 text-align: left;
+	 font-size: 20px;
+	 font-weight: 500;
+ }
+ .loginemail{
+	 width:100%;
+	 height: 7%;
+	 border-radius: 5px;
+	 border: none;
+	 outline: none;
+	 padding: 10px;
+	 font-size: 15px;
+ }
+ .loginbutton{
+	 width:100%;
+	 font-size: 15px;
+	 background-color: blue;
+	 border: none;
+	 color: white;
+	 height: 7%;
+	 opacity: 1;
+	transition: 0.3s;
+	font-weight: bold;
+ }
+ .loginbutton:hover{
+	opacity: 0.7;
+}
+ .loginhelp1 a{
+	 font-size: 13px;
+	 color: white;
+	 float: left;
+ }
+ .loginhelp2 a{
+	font-size: 13px;
+	color: white;
+	float: right;
+}
+.registername{
+	font-size: 25px;
+	 color: aqua;
+	 text-align: center;
+	font-family: 'Cera','Open Sans',sans-serif!important;
+    font-weight: 700;
+}
+.registername1{
+	font-size: 14px;
+	 color: white;
+	 text-align: center;
+}
+.registername1 a{
+	font-size: 14px;
+	 color: aqua;
+	 text-align: center;
+	 text-decoration: none;
+}
+#fixedconstruction{
+	position: fixed;
+	background-image: linear-gradient(to right,rgb(0,0,0,1),rgb(0,0,0,0.3));
+	bottom: 0;
+	left: 0;
+	width: 90%;
+	max-width: 400px;
+	height: 20%;
+	z-index: 2;
+	border-top-right-radius: 100px;
+}
+.constructiontext{
+	padding-right: 20%;
+	margin-top: -22%;
+	margin-left: 17%;
+	color: white;
+	font-size: 100%;
+}
+.constructionbutton{
+	background: transparent;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	margin-left: 95%;
+	color: blue;
+	font-size: 20px;
+	font-weight: bold;
+}
+::-webkit-scrollbar {
+	width: 3px;
+  }
+::-webkit-scrollbar-track {
+	background: #000000; 
+  }
+  /* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888; 
+  }
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
   }

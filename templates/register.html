@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+			Register | HaleAI
+        </title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="shortcut icon" href="/static/assets/img/logo.png">
+		<link rel="stylesheet" type="text/css" href="/static/assets/css/style.css">
+        <script src="/static/assets/js/myscript.js"></script>
+        <script>
+            {% for message in get_flashed_messages() %}
+            alert("{{ message }}")
+            {% endfor %}
+            emid={{ emid }}
+            if(emid==''){
+                {{ emid }}={{ email }};
+            }
+        </script>
+    </head>
+    <body id="teamback">
+        <div class="loginform">
+            <a href="/" class="loginimage">
+                <img src="/static/assets/img/logo.png" height="110" width="116">
+                <br>
+                HaleAI
+            </a>
+            <br><br>
+            <div class="registername">
+                Create your HaleAI account
+            </div>
+            <br>
+            <div class="registername1">
+               Start using our AI tools for the diagnosis and prognosis of diseases.
+               <br>
+               Already have an account?
+               <a href="/login">Log in.</a>
+            </div>
+            <br>
+            <form id="registerform" action="/reglogin" method="post">
+                <div class="loginhint">
+                    First Name
+                </div>
+                <br>
+                <input type="text" class="loginemail" name="firstname" value="{{ f }}" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" />
+                <br><br>
+                <div class="loginhint">
+                    Last Name
+                </div>
+                <br>
+                <input type="text" class="loginemail" name="lastname" value="{{ l }}" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" />
+                <br><br>
+                <div class="loginhint">
+                    Email address
+                </div>
+                <br>
+                <input type="email" class="loginemail" name="emailadd" value="{{ emid }}" placeholder="abc@example.com" onfocus="this.placeholder = ''" onblur="this.placeholder = 'abc.example.com'" />
+                <br><br>
+                <div class="loginhint">
+                    Password
+                </div>
+                <br>
+                <input type="password" class="loginemail" name="password" placeholder="**********" onfocus="this.placeholder = ''" onblur="this.placeholder = '**********'" />
+                <br><br>
+                <div class="loginhint">
+                    Confirm Password
+                </div>
+                <br>
+                <input type="password" class="loginemail" name="confirmpass" placeholder="**********" onfocus="this.placeholder = ''" onblur="this.placeholder = '**********'" />
+                <br><br>
+                <div class="loginhint">
+                    Phone Number
+                </div>
+                <br>
+                <input type="text" class="loginemail" name="phoneno" value="{{ ph }}" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" />
+                <br><br>
+                <div class="loginhint">
+                    User Type
+                </div>
+                <br>
+                <select name="usertype" id="user" class="loginemail" name="usertype">
+                    <option value="User Type" hidden>Choose User Type</option>
+                    <option value="Student">Student</option>
+                    <option value="Healthcare worker">Healthcare worker</option>
+                </select>
+                <br><br><br>
+                <button type="submit" class="loginbutton">
+                    Sign Up
+                </button>
+                </a>
+            </form>
+            <br><br>
+            <div class="loginhelp1">
+                <a href="/login">Sign In instead</a>
+            </div>
+            <br>
+        </div>
+        </script>
+    </body>
+</html>

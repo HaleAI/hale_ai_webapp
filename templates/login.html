@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+			Login | HaleAI
+        </title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="google-signin-client_id" content="852307377257-l9m2ka9mhdoooigp2cemqdbgk8e0ufug.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <link rel="shortcut icon" href="/static/assets/img/logo.png">
+		<link rel="stylesheet" type="text/css" href="/static/assets/css/style.css">
+        <script src="/static/assets/js/myscript.js"></script>
+    </head>
+    <body id="teamback">
+       <div class="loginform">
+            <a href="/" class="loginimage">
+                <img src="/static/assets/img/logo.png" height="110" width="116">
+                <br>
+                HaleAI
+            </a>
+            <br><br>
+            <div class="loginname">
+                User Login
+            </div>
+            <br>
+            <form id="loginform" action="/logincon" method="post">
+                <div class="loginhint">
+                    Email ID
+                </div>
+                <br>
+                <input type="email" class="loginemail" name="eid" value="{{ e }}" placeholder="abc@example.com" onfocus="this.placeholder = ''" onblur="this.placeholder = 'abc@example.com'" />
+                <br><br>
+                <div class="loginhint">
+                    Password
+                </div>
+                <br>
+                <input type="password" class="loginemail" name="password" placeholder="**********" onfocus="this.placeholder = ''" onblur="this.placeholder = '**********'" />
+                <br><br><br>
+                <input type="submit" class="loginbutton" value='Log In'>
+            </form>
+            <br><br>
+            <div class="loginhelp1">
+                <a href="">Forgot Password?</a>
+            </div>
+            <div class="loginhelp2">
+                <a href="/register">New Registration</a>
+            </div>
+            <br>
+        </div>
+        <div class="loginform">
+            <center>
+                <div class="g-signin2" styke="display: inline;"data-onsuccess="onSignIn">
+                </div>
+            </center>
+        </div>
+    </body>
+</html>

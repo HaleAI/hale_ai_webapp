@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">	
+		<title>
+			HaleAI
+		</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="shortcut icon" href="/static/assets/img/logo.png">
+		<link rel="stylesheet" type="text/css" href="/static/assets/css/style.css">
+		<script>
+            {% for message in get_flashed_messages() %}
+            a= "{{ message }}"
+			{% endfor %}
+			if(a!=''){
+				alert(a);
+			}
+        </script>
+	</head></a>
+	<body onload="showSlides(0);">
+		<nav class="navbar navbar-expand-md navbar-dark navigation navpad nopadding">
+			<a href="/" class"navbar-brand">
+				<img src="static/assets/img/logo.png" height="23%" width="23%">
+			</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navmenu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navmenu">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item my-nav-box">
+						<a href="/team" class="nav-link my-nav-link">
+							<center>
+								Team
+							</center>
+						</a>
+					</li>&nbsp;&nbsp;
+					<li class="nav-item my-nav-box">
+						<a href="/" class="nav-link my-nav-link">
+							<center>
+								Investors
+							</center>
+						</a>
+					</li>&nbsp;&nbsp;
+					<li class="nav-item my-nav-box">
+						<a href="/" class="nav-link my-nav-link">
+							<center>
+								Research
+							</center>
+						</a>
+                    </li>
+                    &nbsp;&nbsp;
+    				<li class="nav-item my-nav-box">
+	    				<a href="/" class="nav-link my-nav-link">
+		   					<center>
+		    					Career
+							</center>
+						</a>
+					</li>&nbsp;&nbsp;
+					<li class="nav-item my-nav-box">
+						<a href="/" class="nav-link my-nav-link">
+							<center>
+								Partner
+							</center>
+						</a>
+					</li>&nbsp;&nbsp;
+					<li class="nav-item my-nav-box">
+						<a href="/login" class="nav-link my-nav-link">
+							<center>
+								Login
+							</center>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div id="fixedconstruction">
+			<button class="constructionbutton" onclick="closePopUp()">
+				X
+			</button>
+			<img src="/static/assets/img/gif/construction.gif" width="20%">
+			<div class="constructiontext">
+				Our site is still under development. Some features may not be available at the moment.
+			</div>
+		</div>
+		<script src="/static/assets/js/myscript.js"></script>
+		<div id="hello2">
+			<br><br>
+			<h1>
+				<a href="/">
+					HALEAI
+				</a>
+			</h1>
+			<br><br><br><br><br>
+			<h1 id="about_head">
+				About us
+			</h1>
+			<br>
+			<h1 id="about">
+				In these times, health is a major issue and quality healthcare isn't available to all. We, at HaleAI, aim at providing support to healthcare professionals using artificial intelligence. It can help in diagnosis as well as prognosis of various diseases that can sometimes be overlooked or not have obvious symptoms. Hence, the company provides a platform for faster detection of diseases using technology that will benefit the doctors, as more optimum solutions can be found. Our mission is to help healthcare professionals and transform the healthcare industry. Ultimately, it is the life that wins.
+			</h1>
+			<br><br><br><br><br>		
+		</div>
+		<center>
+		<div class="slideshow-container" id="teamback">
+			<div id="slidehead">
+				Solution with AI
+			</div>
+			<br>
+			<div class="mySlides fade">
+				<div class="numbertext">
+					Enhancing Tumor
+					<br>
+					1 / 3
+				</div>
+			  	<img src="/static/assets/img/braintumor/enhancing_tumor.PNG" width="40%" height="42.3%">
+			 	<div class="slidetext">
+					We are currently working on Brain Tumor Segmentation using a neural networks architecture, Unet. We aim to automatically segment tumor regions in brain from the MRI images.  The neural network is trained using 3D MRI images in which a single training example has multiple slices of an MRI image along with a ground truth label classifying each voxel in the image into categories of edema, non-enhancing tumor and enhancing tumor or else background. After training the neural network, we use the trained model to predict the corresponding regions of tumor in the MRI image. We aim to better visualize the tumor and it’s boundaries using Artificial Intelligence, in order to make the process less time-consuming and readily available.
+				</div>
+			</div>
+			<div class="mySlides fade">
+			  	<div class="numbertext">
+					Non-enhancing Tumor
+					<br>
+					2 / 3
+				</div>
+			  	<img src="/static/assets/img/braintumor/non-enhancing_tumor.PNG" width="40%" height="42.3%">
+			  	<div class="slidetext">
+					We are currently working on Brain Tumor Segmentation using a neural networks architecture, Unet. We aim to automatically segment tumor regions in brain from the MRI images.  The neural network is trained using 3D MRI images in which a single training example has multiple slices of an MRI image along with a ground truth label classifying each voxel in the image into categories of edema, non-enhancing tumor and enhancing tumor or else background. After training the neural network, we use the trained model to predict the corresponding regions of tumor in the MRI image. We aim to better visualize the tumor and it’s boundaries using Artificial Intelligence, in order to make the process less time-consuming and readily available.
+				</div>
+			</div>
+			<div class="mySlides fade">
+				<div class="numbertext">
+				  	Tuberculosis Detection
+				  	<br>
+				  	3 / 3
+			  	</div>
+				<img src="" width="40%" height="200">
+				<div class="slidetext">
+					We are working on Tuberculosis detection using X-ray images of the chest. These images are fed into a neural network architecture which after a lot of training loops learns to distinguish between a normal person's X-ray and a person having TB  X-ray. After having trained the model for better accuracy , we can use it to predict on a completely new X-ray. Using this method , we aim to make the diagnosis easy and readily available for those who lack the resources to do so.
+			  	</div>
+		  	</div>
+		</div>
+		</center>
+		<div style="text-align:center" id="teamback">
+			<br>
+			<span class="dot" id="slide1" onclick="openSlide(this);"></span> 
+			<span class="dot" id="slide2" onclick="openSlide(this);"></span>
+			<span class="dot" id="slide3" onclick="openSlide(this);"></span>
+			<br><br>
+		</div>
+		<div id="freetrial">
+			<div class="container my-container">
+				<form id="trailform" action="/register" method="post">
+        			<div class="row justify-content-center align-items-center">
+						<div class="col-xs-12 col-sm-12 col-md-4 col-xl-3 my-col">
+							<div id="trialtext">
+								<center>
+									Sign Up for a Free trial!
+								</center>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-4 col-xl-3 my-col">
+							<center>
+								<input type="email" name="emid" id="texttrial" placeholder="Email address">
+							</center>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-4 col-xl-3 my-col">
+							<center>
+								<button type="submit" id="trialbutton">
+									Sign Up
+								</button>
+							</center>
+						</div>
+					</div>
+				</form>
+			</div>
+			<hr id="freetrialruler">
+		</div>
+		<footer id="foot">
+			<br>
+			<center>
+				<a href="/">
+					<img src="/static/assets/img/logo.png" height="20%" width="20%">
+				</a>
+			</center>
+			<div id="footname">
+				<center>
+					HaleAI
+				</center>
+			</div>
+			<br><br>
+			<div id="socialmediahead">
+				<ul>IMPORTANT LINKS<br>
+					<li><a href="/team">Team</a></li>
+					<li><a href="">Investors</a></li>
+					<li><a href="">Research</a></li>
+					<li><a href="">Career</a></li>
+					<li><a href="">Partner</a></li>
+					<li><a href="/login">Login</a></li>
+				</ul>
+				<ul>GET IN TOUCH<br>
+					<li><a href="mailto:haleai1994@gmail.com">Email</a></li>
+					<li><a href="tel:+917004171728">Contact</a></li>
+				</ul>
+				<ul id="socialmedia">SOCIAL MEDIA<br>
+					<li><a href="https://www.instagram.com/haleai03/"><img src="/static/assets/img/insta.jpg" height="30" width="30"></a></li>&nbsp;
+					<li><a href="https://www.linkedin.com/company/hale-ai/LinkedIn"><img src="/static/assets/img/linkedin.png" height="30" width="30"></a></li>&nbsp;
+					<li><a href="https://www.facebook.com/haleai/"><img src="/static/assets/img/facebook.jpg" height="30" width="30"></a></li>
+				</ul>
+				<ul>PUBLICATIONS<br>
+					<li><a href="https://dl.acm.org/doi/abs/10.1145/3387168.3387206">Diabetic Retinopathy Diagnosis</a></li>
+				</ul>
+			</div>
+			<br>
+			<center>
+				<hr id="footruler">
+			</center>
+			<br><br><br><br>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>
