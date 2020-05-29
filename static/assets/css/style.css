@@ -9893,7 +9893,7 @@ body{
 #about{
 	text-align: left;
 	color: white;	
-	font-size: 1.6vw;
+	font-size: 20px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	margin-left: 50%;
 	display: inline-block;
@@ -9902,10 +9902,18 @@ body{
 #about_head{
 	text-align: left;
 	color: white;
-	font-size: 3vw;
+	font-size: 40px;
 	font-family: Arial; 
 	margin-left: 50%;
 }
+/*@media screen and (min-width: 601px) {
+	#about_head{
+	  font-size: 80px;
+	}
+	#about{
+
+	}
+}*/
 #team_head{
 	text-align: center;
 	color: blue;
@@ -10120,21 +10128,20 @@ body{
 }
 .slidetext{
   color: rgb(255, 255, 255);
-  font-size: 1.3vw;
+  font-size: 17px;
   padding: 8px 12px;
   position: absolute;
   font-family: 'Times New Roman';
-  right: 15px;
-  top: 20%;
-  width:27%;
+  right: 3px;
+  top: 28%;
+  width:30%;
   text-align: center;
 }
 .numbertext {
   color: rgb(255, 255, 255);
-  font-size: 2vw;
-  padding: 8px 12px;
+  font-size: 30px;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 1%;
 }
 .dot {
@@ -10174,7 +10181,7 @@ body{
 #slidehead{
 	color: white;
 	font-family: Arial;
-	font-size: 4vw;
+	font-size: 40px;
 }
  .loginform{
 	text-align: center;
@@ -10299,3 +10306,26 @@ body{
 ::-webkit-scrollbar-thumb:hover {
 	background: #555;
   }
+  @media screen and (max-width: 500px) {
+	#about_head{
+		font-size: 26px;
+	  }
+	  #about{
+		font-size: 10px;
+	  }
+	  #hello2{
+		  background-position: center;
+	  }
+	#slidehead{
+		font-size: 30px;
+	}
+	.numbertext{
+		font-size: 10px;
+	}
+	.slidetext{
+		font-size: 6px;
+	}
+	#trialtext{
+		font-size: 20px;
+	}
+}
